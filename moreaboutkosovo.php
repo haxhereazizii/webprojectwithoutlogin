@@ -115,7 +115,7 @@
     </div>
 
     <div class="card" >
-        <img src="pixtures/gjakova.jpg">
+        <img src="pixtures/GJAKOVA.jpg">
         <div class="card-content">
             <h3>Gjakova</h3>
             <p>Gjakova boasts a rich tapestry of architectural wonders, including Ottoman-era mosques, traditional bazaars, and centuries-old bridges.</p>
