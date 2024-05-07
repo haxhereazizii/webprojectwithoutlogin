@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <link rel="stylesheet" href="css/rewiew.css">
     <STYle>
-      
+
     </STYle>
 </head>
 <body>
@@ -51,7 +49,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="user_page.php">First Page</a>
+            <a class="nav-link active" aria-current="page" href="index.php">First Page</a>
           </li>
         </ul>
       </div>
@@ -80,7 +78,11 @@
             <option value="5">5 STARS</option>
         </select>
         <div class="msgerrorr" v-if="errors.rating">{{ errors.rating }}</div>
-     
+        <div class="form-group">
+    <label>Do you want to visit Kosovo?</label><br>
+    <input type="radio" v-model="formData.visit" name="visit" value="Yes"> Yes<br>
+    <input type="radio" v-model="formData.visit" name="visit" value="No"> No<br>
+</div>
         
         <div class="button-container">
             <button type="submit" :disabled="!validateForm">Send</button>
@@ -120,7 +122,8 @@
         name: '',
         email: '',
         phone: '',
-        rating: ''
+        rating: '',
+        visit: 'Yes'
       },
       errors: {}
     },
