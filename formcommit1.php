@@ -6,6 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
     $rating = isset($_POST['rating']) ? $_POST['rating'] : '';
+    $visit = isset($_POST['visit']) ? $_POST['visit'] : '';
+
 }
 
 $ratingsMap = [
@@ -38,6 +40,9 @@ $selectedRating = isset($ratingsMap[$rating]) ? $ratingsMap[$rating] : '';
             <p><strong>Email:</strong> <?php echo htmlspecialchars($email); ?></p>
             <p><strong>Phone:</strong> <?php echo htmlspecialchars($phone); ?></p>
             <p><strong>RATING:</strong> <?php echo htmlspecialchars($rating); ?></p>
+            <p><strong>VISITING KOSOVO:</strong> <?php echo htmlspecialchars($visit); ?></p>
+           
+          
         </div>
         <button onclick="window.location.href='rewiew.php'">Go Back to the rewiew form</button>
       
