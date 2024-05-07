@@ -42,9 +42,10 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               About me
             </a>
+                 <li><a class="dropdown-item">....</a></li>
             <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="aboutme.php">About me</a></li>
-
+         
             <li><a class="dropdown-item" href="cv.php">CV</a></li>
               <li><a class="dropdown-item" href="rewiew.php">Review us!</a></li>
               <li>
